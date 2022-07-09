@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <style>
+
+      ul {
+        position: relative;
+        width: 300px;
+      }
+
+      li {
+        margin: 0;
+        padding: 0;
+      }
+
+      input[name$="gte"],
+      input[name$="lte"] {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 100;
+      }
+
+      input[name$="gte"] {
+        margin-bottom: -1em;
+        left: 250px;
+      }
+
+      input[name$="lte"] {
+        margin-top: -1em;
+        right: 0;
+      }
+
+      input[name$="gte"]:focus,
+      input[name$="lte"]:focus {
+        /*background-color: unset;*/
+      }
+    </style>
+    <script>
+      
+var rangeLength = document.querySelector("input[type='range']").clientWidth;
+
+var inputs = document.querySelectorAll("input[type='range']");
+
+Array.prototype.forEach.call(inputs, function(input) {
+  input.addEventListener("change", function(e) {
+    var name = this.name.split("__");
+    var otherId = (name[0]+"__"+ (name[1] !== "gte" ? "gte" : "lte"));
+    var otherEl = document.getElementById(otherId);
+    var domain = [Math.min(this.min, otherEl.min),
+                  Math.max(this.max, otherEl.max)];
+    if (name[1] === "gte") {
+      otherEl.min = this.value;
+      otherEl.style.width = fixWidth(domain[1] - this.value, domain);
+    } else if (name[1] === "lte") {
+      otherEl.max = this.value;
+      otherEl.style.width = fixWidth(this.value, domain);
+    }
+    console.log(this.clientWidth, otherEl.clientWidth);
+  });
+});
+
+function fixWidth(value, domain) {
+  return (Math.abs(domain[0] - value) /
+          Math.abs(domain[0] - domain[1])) *
+    rangeLength;
+}
+    </script>
+    <meta charset="utf-8">
+    <title>double slider</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>double slider</h1>
+    <ul>
+      <li>
+        <label for="range__gte">From</label>
+        <input type="range" max="10" min="0" value="0" name="range__gte"
+               id="range__gte">
+      </li>
+      <li>
+        <label for="range__lte">to</label>
+        <input type="range" max="10" min="0" value="10" name="range__lte"
+               id="range__lte">
+      </li>
+    </ul>
+    <script src="script.js"></script>
+  </body>
+</html>

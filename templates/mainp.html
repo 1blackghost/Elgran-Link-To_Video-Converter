@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>El-gran</title>
+		<link rel="stylesheet" href="/static/css/style.css" type="text/css">
+		<link rel="stylesheet" href="/static/css/index1.css">
+		<script type="text/javascript">
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/62921cd1b0d10b6f3e747dde/1g45c155d';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+            })();
+         </script>
+		<style>
+
+		</style>
+	</head>
+	<body style="overflow:scroll;">
+		<main>
+			<nav class="container">
+				<input id="nav-toggle" type="checkbox" />
+				<div class="logo"><a class="logo-text" href="/">El-<strong>Gran</strong></a>
+				</div>
+				<ul class="links">
+					<li class="list">
+						<a href="/">Home</a>
+						<div class="home_underline"></div>
+					</li>
+					<li class="list">
+						<a href="">About</a>
+						<div class="home_underline"></div>
+					</li>
+					<button class="but-blue">Contact</button>
+				</ul>
+				<label for="nav-toggle" class="icon-burger">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</label>
+			</nav>
+
+			<div id="page" class="wrap">
+				<form action="/process" method="post" class="search">
+					<input name="link" type="text" id="url" placeholder="" class="searchTerm">
+					<button type="submit" onclick="window.location.href='download.html';" class="searchButton"></button>
+				</form>
+				<div class="contentframe">
+					<iframe class="video" src="{{s}}" width="670" height="450" frameborder="2" allowfullscreen></iframe>
+				</div>
+					<div class="align2">
+			
+				<div class="tab-wrap">
+    				<input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+    				<label for="tab1">Video</label>
+    
+    				<input type="radio" id="tab2" name="tabGroup1" class="tab" checked>
+    				<label for="tab2">Audio</label>
+    
+    				<input type="radio" id="tab3" name="tabGroup1" class="tab" checked>
+    				<label for="tab3">Trimmer</label>
+    
+    				<div class="tab__content">
+       				 	<table style="width:100%">
+  							<tr>
+    							<th>Resolution</th>
+    							<th>Download</th>
+  							</tr>
+  							<tr>
+    							<td>144p</td>
+    							<td><a href="/144p"><button>Download</button></a></td>
+  							</tr>
+  							<tr>
+   								<td>360p</td>
+    							<td><a href="/360p"><button>Download</button></a></td>
+    							
+  							</tr>
+  							<tr>
+   								<td>480p</td>
+    							<td><a href="/480p"><button>Download</button></a></td>
+    							
+  							</tr>
+  							<tr>
+   								<td>720p</td>
+    							<td><a href="/720p"><button>Download</button></a></td>
+    							
+  							</tr>
+  							<tr>
+   								<td>1080p</td>
+    							<td><a href="/1080p"><button>Download</button></a></td>
+    							
+  							</tr>
+						</table>
+    				</div>
+    				<div class="tab__content">
+      					<table style="width:100%">
+  							<tr>
+    							<th>Format</th>
+    							<th>Download</th>
+  							</tr>
+  							<tr>
+    							<td>MP3</td>
+    							<td><a href="/mp3"><button>Download</button></a></td>
+  							</tr>
+  							<tr>
+   								<td>M4A</td>
+    							<td><a href="/m4a"><button>Download</button></a></td>
+    							
+  							</tr>
+  							<tr>
+   								<td>WMA</td>
+    							<td><a href="/wma"><button>Download</button></a></td>
+    							
+  							</tr>
+  							<tr>
+   								<td>WAV</td>
+    							<td><a href="/wav"><button>Download</button></a></td>
+    							
+  							</tr>
+  							<tr>
+   								<td>AAC</td>
+    							<td><a href="/aac"><button>Download</button></a></td>
+    							
+  							</tr>
+						</table>
+    				</div>
+    				<div class="tab__content">
+    					<table style="width:100%">
+  							<tr>
+    							<th>From</th>
+    							<th>To</th>
+    							<th>Download</th>
+  							</tr>
+  							<tr>
+  								<form action="/trim" method="post">
+	    							<td><input placeholder="HH:MM:SS" type="text" id="from" name="from"></td>
+	    							<td><input placeholder="HH:MM:SS" type="text" id="to" name="to"></td>
+	    							<label>Trim As: </label>
+	    							<select  name="select">
+									  <option value="audio">Audio</option>
+									  <option value="video">Video</option>
+									  <td><input type="submit" value="Download"></td>
+								</form>
+
+  							</tr>
+  						</table>
+    				</div>
+    			</div>
+			</div>	
+		</div>
+				<div id="footer">
+					<div class="connect">
+						<div>
+							<h1 class="message">{{message}}</h1>
+							<!-- <div>
+								<a href="http://freewebsitetemplates.com/go/facebook/" class="facebook">facebook</a>
+								<a href="http://freewebsitetemplates.com/go/twitter/" class="twitter">twitter</a>
+								<a href="http://freewebsitetemplates.com/go/googleplus/" class="googleplus">googleplus</a>
+								<a href="http://pinterest.com/fwtemplates/" class="pinterest">pinterest</a>
+							</div> -->
+						</div>
+					</div>
+					<div class="footnote">
+						<div>
+							<!-- <p>&copy; 2023 EL-GRAN | Powered by NAB Inc. | ALL RIGHTS RESERVED</p> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

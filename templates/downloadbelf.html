@@ -1,0 +1,426 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    window.onload = function(){
+       let text = document.getElementById("message").textContent;
+       console.log(text); 
+        if (text.includes("Unknown Error Occured!")){
+            alert("Unknown Error Occured!");
+        }
+        if (text.includes("Resolution Unavailable")){
+
+          alert("Resolution Unavailable.Try Next!");
+        }
+        if (text.includes("Invalid Entry Detected ! Try Again. ")){
+          alert("Invalid Entry Detected ! Try Again. ");
+        }
+        if (text.includes("Atleast 1 sec Need To be Trimmed!")){
+
+          alert("Oops! Atleast 1 sec Need To be Trimmed!");
+        }
+      }
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+</script>
+  <script>
+    $(document).ready(function(){
+    $("#modal").trigger('click'); });
+
+
+  </script>
+      <script type="text/javascript">
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/62921cd1b0d10b6f3e747dde/1g45c155d';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+            })();
+         </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+
+}
+.centerurl {
+  display: block;
+  margin-left: auto;
+  width: 70%;
+  padding-left: 25%;
+  padding-top: auto;
+  padding-bottom: 20px;
+
+}
+.centerplayer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60%;
+  width: 75%;
+  border: 4px  solid blueviolet;
+
+}
+@media (min-width: 992px) {   
+  .centerplayer{
+
+  }
+}
+@media screen and (max-width: 768px) {
+  .centerplayer{
+    width: 90%;
+  }
+}
+.centertab {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  border: 2px solid blueviolet;
+
+
+}
+@media (min-width: 992px) {   
+  .centertab{
+   
+  }
+}
+@media screen and (max-width: 768px) {
+  .centertab{
+    width :90%;
+   
+  }
+}
+h1 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+.searchbox {
+  border: 4px solid blueviolet;
+  width: 70%;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.searchbut {
+  background-color: blueviolet;
+  width: 5%;
+  height: 50px;
+  position: absolute;
+  border: 2px solid blueviolet;
+  border-radius:5px;
+
+}
+.tab {
+  overflow: hidden;
+  background-color: #1f1f1f;
+  width: 75%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: palevioletred;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: blueviolet;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  border-top: none;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: blueviolet;
+  color: white;
+  text-align: center;
+}
+
+
+.centerurl{
+  display: flex;
+      width: 60%;
+  
+}
+@media screen and (max-width: 768px) {
+  .centerurl{
+    width: 90%;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    padding-left: 20%;
+      padding-top: 15%;
+
+    transform: translate(-50%, -50%);
+  }
+}
+@media (min-width: 992px) {   
+  .centerurl{
+    position: absolute;
+    top: 17%;
+    width: 50%;
+  }
+}
+.search{
+    width: 75%;
+    border: 3px solid blueviolet;
+    height: 50px;
+    border-radius: 5px 0 0 5px;
+}
+@media (min-width: 992px) {   
+  .search{
+    position: absolute;
+   top: 5%;
+   width: 65%;
+
+  }
+}
+.buttonli{
+  height: 51px;
+  width: 40px;
+  background-color: blueviolet;
+  border: 3px solid blueviolet;
+  border-radius: 0 5px 5px 0;
+  position:relative;
+
+
+}
+@media (min-width: 992px) {   
+  .buttonli{
+    margin-left: auto;
+    margin-top: auto;
+    height: 53px;
+
+  }
+}
+</style>
+    <link rel="stylesheet" href="/static/css/index1.css">
+</head>
+<body bgcolor="#1f1f1f">
+  <div class="ashish">
+  </div>
+  <main>
+      <nav class="container">
+        <input id="nav-toggle" type="checkbox" />
+        <div class="logo"><a class="logo-text" href="/">El-<strong>Gran</strong></a>
+        </div>
+        <ul class="links">
+          <li class="list">
+            <a href="/">Home</a>
+            <div class="home_underline"></div>
+          </li>
+          <li class="list">
+            <a href="/help">Help</a>
+            <div class="home_underline"></div>
+          </li>
+          <a href="/whatsnew" class="but-blue">What's New?</a>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+      </nav>  
+      <br>
+      <br>
+      
+      <br>
+      <br>
+      <br>
+
+      <br>
+<form action="/process" method="post" class="centerurl">
+  <input  autocomplete="off" name="link" type="text" id="url" placeholder="Paste the Url..." class="search">
+  <button style="font-size: 30px;color:white"
+ type="submit" onclick="window.location.href='download.html';" class="buttonli">></button>
+
+</form>
+<h1 id="message" style="font-size: 20px;color:red;" class="message">{{message}}</h1>
+<br>
+<br>
+<iframe src="{{s}}" allow="autoplay; encrypted-media"  width="50%" height="300" class="centerplayer">
+</iframe>
+<h1>   </h1>
+<div class="centertab">
+<div class="tab">
+  <button id="modal" class="tablinks" style="font-size: 10px;color: white;"onclick="openCity(event, 'Video')" style="color:#f1f1f1"><strong>Video</strong></button>
+  <button class="tablinks" style="font-size: 10px;color: white" onclick="openCity(event, 'Audio')"style="color:#f1f1f1"><strong>Audio</strong></button>
+  <button class="tablinks" style="font-size: 10px;color: white" onclick="openCity(event, 'Trimmer')"style="color:#f1f1f1"><strong>Trimmer</strong></button>
+</div>
+
+<div id="Video" class="tabcontent">
+  <table style="width:100%">
+  <tr style="color:f1f1f1;font-family: 'Open Sans', sans-serif;font-size:24px;border:2px solid blueviolet;padding-bottom: 10px;">
+    <th style="font-size: 17px;"><u>Resolution</u></th>
+    <th style="font-size: 17px"><u>Status</u></th>
+    <th style="font-size: 17px"><u>Download</u></th>
+  </tr>
+  <tr style="color:f1f1f1;font-family: 'Open Sans', sans-serif;font-size:18px;text-align:center">
+    <td>1080p</td>
+    <td>{{fifth}}</td>
+    <td><a href="/1080p" type="submit"style="background-color: blueviolet;font-size: 18px;color:#f1f1f1;font-family: 'Open Sans', sans-serif;border:none">Download</a></td>
+  </tr>
+  <tr style="color:f1f1f1;font-family: 'Open Sans', sans-serif;font-size:18px;text-align:center">
+    <td>720p</td>
+    <td>{{fourth}}</td>
+    <td><a href="/720p" style="background-color: blueviolet;font-size: 18px;color:#f1f1f1;font-family: 'Open Sans', sans-serif;border:none">Download</a></td>
+  </tr>
+  <tr style="color:f1f1f1;font-family: 'Open Sans', sans-serif;font-size:18px;text-align:center">
+    <td>480p</td>
+    <td>{{third}}</td>
+    <td><a href="/480p" type="submit"style="background-color: blueviolet;font-size: 18px;color:#f1f1f1;font-family: 'Open Sans', sans-serif;border:none">Download</a></td>
+  </tr>
+  <tr style="color:f1f1f1;font-family: 'Open Sans', sans-serif;font-size:18px;text-align:center">
+    <td>360p</td>
+    <td>{{second}}</td>
+    <td><a href="/360p" type="submit"style="background-color: blueviolet;font-size: 18px;color:#f1f1f1;font-family: 'Open Sans', sans-serif;border:none">Download</a></td>
+  </tr>
+  <tr style="color:f1f1f1;font-family: 'Open Sans', sans-serif;font-size:18px;text-align:center">
+    <td>144p</td>
+    <td>{{first}}</td>
+    <td><a href="/144p" type="submit"style="background-color: blueviolet;font-size: 18px;color:#f1f1f1;font-family: 'Open Sans', sans-serif;border:none">Download</a></td>
+  </tr>
+</table>
+<p style="font-size:10px;color:white">Hint:Sometimes The Initial Data May Show Unavailable,But If You Really Prefer The Exact Resolution/Format Just Give It A Try!<p>
+</div>
+
+<div id="Audio" class="tabcontent">
+  <table style="width:100%">
+  <tr style="color:f1f1f1;font-family: 'Open Sans', sans-serif;font-size:24px;border:2px solid blueviolet;">
+    <th style="font-size: 17px;"><u>Format</u></th>
+    <th style="font-size: 17px"><u>Status</u></th>
+    <th style="font-size: 17px"><u>Download</u></th>
+  </tr>
+  <tr style="color:f1f1f1;font-family: 'Open Sans', sans-serif;font-size:18px;text-align:center">
+    <td>MP3</td>
+    <td>available</td>
+    <td><a href="/mp3" type="submit"style="background-color: blueviolet;font-size: 18px;color:#f1f1f1;font-family: 'Open Sans', sans-serif;border:none">Download</a></td>
+  </tr>
+  <tr style="color:f1f1f1;font-family: 'Open Sans', sans-serif;font-size:18px;text-align:center">
+    <td>M4A</td>
+    <td>available</td>
+    
+    <td><a href="/m4a" type="submit"style="background-color: blueviolet;font-size: 18px;color:#f1f1f1;font-family: 'Open Sans', sans-serif;border:none">Download</a></td>
+  </tr>
+  <tr style="color:f1f1f1;font-family: 'Open Sans', sans-serif;font-size:18px;text-align:center">
+    <td>WMA</td>
+    <td>available</td>
+
+    <td><a href="/wma" type="submit"style="background-color: blueviolet;font-size: 18px;color:#f1f1f1;font-family: 'Open Sans', sans-serif;border:none">Download</a></td>
+  </tr>
+  <tr style="color:f1f1f1;font-family: 'Open Sans', sans-serif;font-size:18px;text-align:center">
+    <td>WAV</td>
+    <td>available</td>
+
+     <td><a href="/wav" type="submit"style="background-color: blueviolet;font-size: 18px;color:#f1f1f1;font-family: 'Open Sans', sans-serif;border:none">Download</a></td>
+  </tr>
+  <tr style="color:f1f1f1;font-family: 'Open Sans', sans-serif;font-size:18px;text-align:center">
+    <td>AAC</td>
+    <td>available</td>
+
+   
+    <td><a href="/aac" type="submit"style="background-color: blueviolet;font-size: 18px;color:#f1f1f1;font-family: 'Open Sans', sans-serif;border:none">Download</a></td>
+  </tr>
+</table> 
+<p style="font-size:10px;color:white">Hint:All Formats Are Ready And Available!<p>
+</div>
+
+<div id="Trimmer" class="tabcontent">
+  <table style="width:100%">
+    <tr style="text-align: center;color:f1f1f1;font-family: 'Open Sans', sans-serif;font-size:24px;border:2px solid blueviolet;padding-bottom: 10px;">
+    </tr>
+    <tr style="text-align: center;color:f1f1f1;font-family: 'Open Sans', sans-serif;font-size:20px;border:2px solid blueviolet;padding-bottom: 10px;">
+        <form action="/trim" method="post">
+                    <td style="text-align:center;">
+                      <p style="font-size: 30px;color:white">From: </p>
+                      <input  autocomplete="off" style="width:20%;height:30px"  placeholder="HH" type="text" id="fromh" name="fromh">:
+                      <input style="width:20%;height:30px"  autocomplete="off"  placeholder="MM" type="text" id="fromm" name="fromm">:
+                      <input  autocomplete="off" style="width:20%;height:30px"  placeholder="SS" type="text" id="froms" name="froms"></td>
+                      <tr>
+                    <td style="text-align:center;">
+                       <p style="font-size: 30px;color: white;">To: </p>
+                      <input  autocomplete="off" style="width:20%;height:30px"  placeholder="HH" type="text" id="toh" name="toh">:
+                      <input  autocomplete="off" style="width:20%;height:30px"  placeholder="MM" type="text" id="tom" name="tom">:
+                      <input  autocomplete="off" style="width:20%;height:30px"  placeholder="SS" type="text" id="tos" name="tos"></td>
+                      </tr>
+                      <tr>
+                      &emsp;        
+                    <label style="font-weight: 900px;font-size: 30px;color: white;">Trim As: </label>
+                    <select style="font-size: 30px;color:blueviolet;"  name="select">
+                    <option value="audio">Audio</option>
+                    <option value="video">Video</option>
+                  </tr>
+                    <tr>
+                    <td style="text-align:center;"><input class="buttoncon" style="background-color: blueviolet;font-size: 18px;color:#f1f1f1;font-family: 'Open Sans', sans-serif;border:none"  type="submit" value="Download"></td>
+                  </tr>
+
+        </form>
+      </tr>
+
+  </table>
+  <p style="font-size:10px;color:white">Hint:The Values You Want To Pass Can Be Entered And The Values Which Are Zero Can Be Leaved Empty.Note That The Syntax Is HH:MM:SS .For Example,In Order To Trim From 7s To 14s Then,The Input Should Be 00:00:07 To 00:00:14 . Select Video/Audio You Want To Download And Voila There We Go!!<p>
+</div>
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+ <br>
+  <br>  <br>
+<div class="footer">  
+@Copyright <a href="#"> <strong><strong>NAB</strong> </strong>Lab Inc. </a> 2022- All Right Reserved.   
+</div>  
+</body>
+</html>

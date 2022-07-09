@@ -1,0 +1,99 @@
+<html>
+<head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+  body{
+    margin: 0px;
+  }
+	.navbar {
+  overflow: hidden;
+  background-color: #1f1f1f;
+  padding-top: 30px;
+  padding-right: 80px;
+
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: right;
+  display:block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+.navbar b {
+  float: left;
+  display:block ;
+  color: white;
+  padding: 14px 100px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 27px;
+}
+.new{
+  background-color: blueviolet;
+  border-radius: 20px;
+  font-size: 10px;
+}
+.centerurl{
+  padding-right: auto;
+  padding-left: 20%;
+  padding-top: 7%;
+  width: 75%;
+}
+.search{
+    width: 75%;
+    border: 3px solid blueviolet;
+    height: 51px;
+    border-radius: 5px 0 0 5px;
+}
+.buttonli{
+  height: 51px;
+  width: 40px;
+  background-color: blueviolet;
+  border: 3px solid blueviolet;
+  border-radius: 0 5px 5px 0;
+  position:absolute;
+}
+</style>
+</head>
+<body bgcolor="#1f1f1f">
+<form class="navbar">
+  <b>El-<strong>Gran</strong></b>
+  <a href="" class="new">Whats New</a>
+  <a href="" style="padding-right: 50px;"><strong>Help</strong></a>
+  <a href=""><strong>Home</strong></a>
+</form>
+<br></br>
+<form class="centerurl">
+<input name="link" type="text" id="url" class="search">
+<button class="buttonli"></button>
+</form>
+<h2>tid</h2>
+<h2>tid</h2>
+<h2>tid</h2>
+<h2>tid</h2>
+<h2>tid</h2>
+<h2>tid</h2>
+<h2>tid</h2>
+<h2>tid</h2>
+<h2>tid</h2>
+<h2>tid</h2>
+<h2>tid</h2>
+<h2>tid</h2>
+<h2>tid</h2>
+<h2>tid</h2>
+v
+<h2>tid</h2>
+<h2>tid</h2>
+v
+<h2>tid</h2>
+v
+<h2>tid</h2>
+<h2>tid</h2>
+v
+<h2>tid</h2>
+v
+</body>
+</html>
